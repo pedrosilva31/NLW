@@ -48,7 +48,7 @@ main {
     margin: auto;
     display: grid;
     gap: 24px;
-    margin-top: 32px;
+    margin: 32px auto;
 
 }
 
