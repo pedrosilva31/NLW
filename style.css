@@ -27,15 +27,17 @@ header div {
     width: 120px;
     height: 120px;
     flex: none;
-    gap: 32px;
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
     padding: 4px;
     border-radius: 50%;
     margin-top: 32px;
+    transition: transform 0.3s;
+}
+header div:hover{
+    transform: scale(1.1);
+
 }
 header img{
-
-    width: 120px;
     border-radius: 50%;
     
 }
@@ -89,8 +91,13 @@ ul {
 
     margin-top: 24px;
 
-}
+    transition: transform 0.3s;
 
+}
+ul li :hover{
+    transform: scale(1.1);
+
+}
 .games-list img {
     border-radius: 8px;
     width: 90px;
@@ -99,5 +106,23 @@ ul {
 .channel-list img {
     width: 70px;
     border-radius: 50%;
+    border: 1px solid #443E54;
+
+}
+/*animation*/ 
+header div {
+    animation: fromtop 3s;
+    
+}
+@keyframes fromtop{
+    0%{ 
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 }
